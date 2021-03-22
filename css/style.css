@@ -1,0 +1,117 @@
+/*
+#086972     dark blue       primary color
+#01A9B4     middle blue     secondary color
+#87DFD6     pale blue       tertiary color
+#DB6400     orange          (used as an accent color for CTAs etc.)
+*/
+
+img {
+  width: 100%;     /* Makes the images scale correctly. */
+}
+
+body {
+  background-color: #FFFFFF;
+  font-family: 'Droid', sans-serif; /* If the chosen font can't be loaded, the first Google font of the sans-serif typeface that can be found on the user's computer will be loaded. */
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
+
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+<link href="https://fonts.googleapis.com/css?family=Droid:300,400,700" rel="stylesheet">
+
+/*
+Correct order:
+1.) visited
+2.) hover
+3.) active
+*/
+
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+
+a {
+  color: #086972;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+a:active { /* selected link */
+  color: #994c30;
+}
+
+/*
+The button class should be at the end of the css document,
+to make sure it is not overridden by other classes, if these
+classes would follow up this one.
+ */
+
+.button {
+  display: inline-block;                /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #ffffff;                       /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;    /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.5;                        /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+
+     } /* End of body */
+
+/*
+font-weight: bold;              (emboldens a font, although it’s better to use the weight as set in the font link: 300, 400, or 700)
+font-style: italic;             (italicizes a font, though make sure you selected it in Google fonts, as well)
+font-variant: small-caps;       (transforms all lowercase letters into small caps—uppercase letters set at the same height as their surrounding lowercase letters)
+text-transform: uppercase;      (transforms all letters to uppercase so that you don’t need to write all uppercase in your HTML)
+text-decoration: underline;     (underlines a piece of text)
+*/
