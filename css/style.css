@@ -6,7 +6,15 @@
 */
 
 img {
-  width: 100%;     /* Makes the images scale correctly. */
+  width: 50%; padding: 300PX;    /* Makes the images scale correctly. */
+}
+
+
+header {
+  background-color: #086972;
+  padding: 10PX;
+  margin: 15PX; 10PX; 15PX; 10PX;  /* The order from left to right is: Top, right, bottom, left. */
+  text-align: center;
 }
 
 body {
@@ -76,7 +84,7 @@ classes would follow up this one.
 .button {
   display: inline-block;                /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #ff7f50;
-  color: #ffffff;                       /* needed to override the default link color */
+  color: #fffffd;                       /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
@@ -104,6 +112,40 @@ classes would follow up this one.
 .button.contact:active {
   background-color: #ff7f50;
   color: #ffffff;
+}
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+.logo {
+  max-width: 500px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
 }
 
      } /* End of body */
