@@ -5,6 +5,7 @@
 #DB6400     orange          (used as an accent color for CTAs etc.)
 */
 ​
+
 img {
   width: 20%; /* Makes the images scale correctly. */
 }
@@ -26,12 +27,12 @@ img {
 }
 
 .logo {
-  max-width: 300px;
+  max-width: 50px;
 }
 ​
 .header {
   padding: 99px;
-  text-align: center
+  text-align: center;
   background-color: #086972;
   color: white;
   font-size: 40px;
@@ -198,10 +199,7 @@ text-transform: uppercase;      (transforms all letters to uppercase so that you
 text-decoration: underline;     (underlines a piece of text)
 */
 ​
-​
-#logo {
-  width: 20px;
-}
+
 ​
 .footer-icons {
   width: 10px;
@@ -209,7 +207,7 @@ text-decoration: underline;     (underlines a piece of text)
 ​
 footer {
   background: var(--primary-700);
-  color: var(--#111111-50);
+  color: #ffffff;
 }
 
 /* ==============================
@@ -227,9 +225,9 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 }
-​
+
 /* ==============================
-Large devices (1024px or larger)
+Medium devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   header {
@@ -243,8 +241,9 @@ Large devices (1024px or larger)
     margin-top: 4px;
   }
 }
+
 /* ==============================
-X-large devices (1440px or larger)
+Medium devices (1440px and larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
   header {
@@ -294,12 +293,8 @@ X-large devices (1440px or larger)
 }
 
 
-
 /* Animation exercise */
 
-width: 100%
-max-width: 100%
-height: auto;
 
 @keyframes color-change {
   0% {fill: #edc655;}
