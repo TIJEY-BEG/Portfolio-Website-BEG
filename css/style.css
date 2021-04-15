@@ -5,7 +5,6 @@
 #DB6400     orange          (used as an accent color for CTAs etc.)
 */
 ​
-
 img {
   width: 20%; /* Makes the images scale correctly. */
 }
@@ -17,10 +16,10 @@ img {
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 0px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row { padding-bottom: 5px; border-bottom: 100px solid #FFFFFF; }
 
 .center {
   text-align: center;
@@ -29,12 +28,12 @@ img {
 .logo {
   max-width: 50px;
 }
-​
+
 .header {
-  padding: 99px;
+  padding: 98px;
   text-align: center;
-  background-color: #086972;
-  color: white;
+  background-color: #FFFFFF;
+  color: #086972;
   font-size: 40px;
   margin: 15px 10px 15px 10px;  /* The order from left to right is: Top, right, bottom, left. */
 
@@ -49,18 +48,17 @@ nav > ul > li > a {
 
 #hero {
   background-color: #ffe4c4;
-  padding: 20px 0;
+  padding: 10px 0;
   display: inline-block;
   width: 100%;
 }
 
 main {
-  padding-top: 150px;
+  padding-top: 15px;
 }
 
 /* End of layout styling */
 
-​
 body {
   background-color: #FFFFFF;
   font-family: 'Droid', sans-serif; /* If the chosen font can't be loaded, the first Google font of the sans-serif typeface that can be found on the user's computer will be loaded. */
@@ -69,7 +67,8 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #4a4a4a;
 } /* End of body */
-​
+
+
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -92,73 +91,7 @@ h4 {
   font-size: 1.35em;
   font-weight: 400;
 }
-​
-/*
-Correct order:
-1.) visited
-2.) hover
-3.) active
-*/
-​
-a:visited { /* visited link */
-  color: #8e5540;
-}
-​
-a {
-  color: #086972;
-  text-decoration: none; /* No underlining */
-}
-a:hover,
-a:focus {
-  color: #cc6540;
-  text-decoration: underline;
-}
-​
-a:active { /* selected link */
-  color: #994c30;
-}
-​
-/*
-The button class should be at the end of the css document,
-to make sure it is not overridden by other classes, if these
-classes would follow up this one.
- */
-​
-.button {
-  display: inline-block;                /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
-  color: #fffffd;                       /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;    /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-​
-.button:hover {
-  opacity: 0.5;                        /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
-}
-​
-.button.contact {
-  background-color: transparent;
-  color: #ff7f50;
-  text-transform: uppercase;
-  border: 2px solid #ff7f50;
-}
-​
-.button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-​
-.button.contact:active {
-  background-color: #ff7f50;
-  color: #ffffff;
-}
-​
-/* Layout styling */
-​
+
 .container {
   padding: 0 15px;
 }
@@ -179,7 +112,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
 }
-​
+
 nav > ul > li {
   display: inline-block;
 }
@@ -198,17 +131,17 @@ font-variant: small-caps;       (transforms all lowercase letters into small cap
 text-transform: uppercase;      (transforms all letters to uppercase so that you don’t need to write all uppercase in your HTML)
 text-decoration: underline;     (underlines a piece of text)
 */
-​
 
-​
+
 .footer-icons {
   width: 10px;
 }
 ​
 footer {
   background: var(--primary-700);
-  color: #ffffff;
+  color: #086972 ; /* Color is not applied. */
 }
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -251,49 +184,7 @@ Medium devices (1440px and larger)
     padding: 20px 0 13px;
   }
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-}
-
-.col-md-6 {
-  width: 50%;   /* md = medium size; col = columns; The 6 indocatces a six column-span */
-}
-
-[class*="col-"] {
-  float: left;
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-#about-page h3 { margin-top: 0;}
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.button {
-  display: inline-block;
-  background-color: #ff7f50;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  transition: 0.2s opacity;
-}
-
-
-/* Animation exercise */
+  /* Animation exercise */
 
 
 @keyframes color-change {
@@ -330,5 +221,109 @@ Medium devices (1440px and larger)
 
 
 
-
 /* End of animation exercise */
+
+.col-md-6 {
+  width: 50%;   /* md = medium size; col = columns; The 6 indocatces a six column-span */
+}
+
+[class*="col-"] {
+  float: center;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#about-page h3 { margin-top: 0;}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  display: inline-block;
+  background-color: #ff7f50;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  transition: 0.2s opacity;
+}
+
+
+/*
+The button class should be at the end of the css document,
+to make sure it is not overridden by other classes, if these
+classes would follow up this one.
+ */
+
+
+/*
+Correct order:
+1.) visited
+2.) hover
+3.) active
+*/
+​
+a:visited { /* visited link */
+  color: #8e5540;
+}
+​
+a {
+  color: #086972;
+  text-decoration: none; /* No underlining */
+}
+a:hover,
+a:focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+​
+a:active { /* selected link */
+  color: #994c30;
+}
+
+button {
+  display: inline-block;                /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #ff7f50;
+  color: #fffffd;                       /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;    /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+​
+.button:hover {
+  opacity: 0.5;                        /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+​
+.button.contact {
+  background-color: transparent;
+  color: #ff7f50;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+}
+​
+.button.contact:hover {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+​
+.button.contact:active {
+  background-color: #ff7f50;
+  color: #ffffff;
+}
+​
+/* End of: Button class */
+
+
+​
