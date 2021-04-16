@@ -12,14 +12,14 @@ img {
 /* Layout styling */
 ​
 .container {
-  padding: 0 15px;
+  padding: 0 0px; color: blue;
 }
 
 .row {
   margin: 0px 0; /* 25px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 5px; border-bottom: 100px solid #FFFFFF; }
+#work .row { padding-bottom: 0px; border-bottom: 50px solid #FFFFFF; }
 
 .center {
   text-align: center;
@@ -30,9 +30,9 @@ img {
 }
 
 .header {
-  padding: 98px;
+  padding: 50px;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #086972;
   color: #086972;
   font-size: 40px;
   margin: 15px 10px 15px 10px;  /* The order from left to right is: Top, right, bottom, left. */
