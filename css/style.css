@@ -30,8 +30,7 @@ img {
 }
 
 .header {
-  padding: 50px;
-  text-align: center;
+  padding: 10px 0px 4px;
   background-color: #086972;
   color: #086972;
   font-size: 40px;
@@ -39,11 +38,47 @@ img {
 
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
+main {
+  padding-top: 56px;
+}
+
+min-width: 641px
+nav > ul {
+  margin: 1em 0;
+}
+
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+ onclick="menuToggle()
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 #hero {
@@ -184,44 +219,6 @@ Medium devices (1440px and larger)
     padding: 20px 0 13px;
   }
 
-  /* Animation exercise */
-
-
-@keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-
-
-/* End of animation exercise */
 
 .col-md-6 {
   width: 50%;   /* md = medium size; col = columns; The 6 indocatces a six column-span */
